@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — UX/UI & Graphic Design Portfolio</title>
+  <meta name="description" content="A curated portfolio of UX/UI and graphic design work." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Lora (serif display) + DM Sans (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">Daniela Castro Silva</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== BREADCRUMB ===================== -->
+  <!-- Dynamic breadcrumb — updated via JS as user scrolls -->
+  <nav class="breadcrumb" aria-label="Breadcrumb navigation" id="breadcrumb">
+    <ol class="breadcrumb-list" id="breadcrumb-list">
+      <li class="breadcrumb-item active">
+        <a href="#hero" class="breadcrumb-link" data-section="hero">Home</a>
+      </li>
+    </ol>
+  </nav>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Hero section">
+      <!-- SVG hero: embedded text so it's part of the "image" -->
+   <img src="pics.jpg"/>
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="hero-scroll-line"></span>
+        <span class="hero-scroll-text">scroll</span>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects-wrapper" id="projects" aria-label="Projects">
+
+      <!-- PROJECT 1: Image Left, Text Right -->
+      <article class="project" id="project-1" data-breadcrumb="Huddinge kommun" aria-label="Project: Huddinge kommun">
+        <div class="project-intro">
+          <span class="project-number">01</span>
+          <h2 class="project-title">Huddinge kommun</h2>
+          <p class="project-description">
+            Strengthening community by boosting engagement at Senior Centers
+          </p>
+        </div>
+        <div class="project-split project-split--img-left">
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="laptopp.png"/>
+          </div>
+
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="two.png"/>
+          </div>
+          <div class="project-text">
+            <h3 class="project-text-heading">UX, SERVICE DESIGN</h3>
+           <p class="project-text-body">
+              A redesigned activity schedule takes the lead position on the Senior Center webpage, making programs instantly visible and significantly improving discoverability, engagement, and overall awareness of what the center offers.
+            </p>
+            <p class="project-text-body">
+              Large‑format posters increase visibility across the Senior Center and surrounding municipal locations, using clear, profile‑aligned visuals that seamlessly integrate with Huddinge’s existing communication style while still standing out enough to capture attention.
+            </p>
+            <p class="project-text-body">
+              A simple coffee stamp card turns an everyday moment into a retention driver — encouraging seniors to return more often, strengthening routine, and building a sense of community through a small but effective behavioral nudge.
+            </p>
+          
+         
+            <a href="project1.html" class="btn-bts" aria-label="Behind the scenes: Forma Identity System">
+              Behind the Scenes <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Text Left, Image Right -->
+      <article class="project project--alt-bg" id="project-2" data-breadcrumb="Immanuelskyrkan" aria-label="Project: Immanuelskyrkan">
+        <div class="project-intro">
+          <span class="project-number">02</span>
+          <h2 class="project-title">Immanuelskyrkan</h2>
+          <p class="project-description">
+            User‑centered design for a diverse and growing church community
+          </p>
+        </div>
+        <div class="project-split project-split--text-left">
+          
+            <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="tungkyrklaptop.png"/>
+          </div>
+<div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="mobilee.png"/>
+          </div>
+          
+          <div class="project-text">
+            <h3 class="project-text-heading">UX DESIGN</h3>
+            <p class="project-text-body">
+              A redesigned website puts the needs of Immanuel Church’s visitors and members at the center, making it easier for people of all ages and backgrounds to find what they’re looking for. Clear navigation, simplified language, and structured content help users reach their goals without friction, whether they’re exploring faith, looking for events, or seeking support.
+            </p>
+            <p class="project-text-body">
+              Tailored pathways guide key groups, seniors, youth, and Korean‑speaking members, to the information most relevant to them. By reducing cognitive load and creating culturally and age‑appropriate entry points, the experience becomes more intuitive, welcoming, and inclusive for the church’s diverse community.
+            </p>
+            <p class="project-text-body">
+              Improved content hierarchy and streamlined user flows make the website a more functional and intuitive digital experience. Members can now access practical information, while new visitors gain a clearer understanding of what the church offers and how to get involved.
+            </p>
+         
+            <a href="project2.html" class="btn-bts" aria-label="Behind the scenes: Forma Identity System">
+              Behind the Scenes <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+        
+      </article>
+
+      <!-- PROJECT 3: Image Left, Text Right -->
+      <article class="project" id="project-3" data-breadcrumb="Flottsbro" aria-label="Project: Flottsbro">
+        <div class="project-intro">
+          <span class="project-number">03</span>
+          <h2 class="project-title">Flottsbro</h2>
+          <p class="project-description">
+          Ongoing project</p>
+        </div>
+        <div class="project-split project-split--img-left">
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src=""/>
+          </div>
+
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src=""/>
+          </div>
+          <div class="project-text">
+            <h3 class="project-text-heading">SERVICE DESIGN</h3>
+            <p class="project-text-body">
+            TBA
+          </p>
+            <p class="project-text-body">
+           
+            </p>
+         
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: Text Left, Image Right -->
+      <article class="project project--alt-bg" id="project-4" data-breadcrumb="Press Start" aria-label="Project: Press Start">
+        <div class="project-intro">
+          <span class="project-number">04</span>
+          <h2 class="project-title">Press Start</h2>
+          <p class="project-description">
+            A validated UX foundation for the upcoming Press Start Gaming Hub website, establishing a clear structure, hierarchy, and user flow.
+          </p>
+        </div>
+        <div class="project-split project-split--text-left">
+          <div class="project-media">
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="pslap.png"/>
+          </div>
+
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="pstapmob.png"/>
+          </div>
+          </div>
+          <div class="project-text">
+            <h3 class="project-text-heading">UX DESIGN</h3>
+            <p class="project-text-body">
+              A strong gaming brand needs more than visuals, it needs clarity, momentum, and an experience users understand instantly.
+
+UX direction for Press Start established a scalable foundation built around clear hierarchy, intuitive navigation, and strategic CTA placement. 
+</p>
+            <p class="project-text-body">
+             The project validated both the structure and overall user experience. The result is a high-fidelity concept that not only captures the energy of the gaming industry, but also provides a realistic and developer-ready direction for the platform currently under construction.
+            </p>
+         
+            <a href="project4.html" class="btn-bts" aria-label="Behind the scenes: Noll SaaS Dashboard">
+              Behind the Scenes <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          
+      </article>
+
+      <!-- PROJECT 5: Image Left, Text Right -->
+      <article class="project" id="project-5" data-breadcrumb="Svenska kyrkan" aria-label="Project: Svenska kyrkan">
+        <div class="project-intro">
+          <span class="project-number">05</span>
+          <h2 class="project-title">Svenska kyrkan</h2>
+          <p class="project-description">
+            Designing inclusive and uplifting content for Svenska kyrkan where movement, health, and community come together through Zumba
+          </p>
+        </div>
+        <div class="project-split project-split--img-left">
+          <div class="project-media">
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="svkt.png"/>
+          </div>
+
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="svkinsta.png"/>
+          </div>
+           <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="svkstack.png"/>
+          </div>
+          </div>
+          <div class="project-text">
+            <h3 class="project-text-heading">CONTENT CREATION, GRAPHIC DESIGN</h3>
+            <p class="project-text-body">
+              Content with balanced energy, warmth, and accessibility while staying aligned with the visual guidelines and tone of the church. Through dynamic visuals, rhythmic editing, and inviting layouts, the content communicated both the joy of movement and the sense of community surrounding the classes.
+            </p>
+            <p class="project-text-body">
+           Adapted for social media across multiple formats and languages, including both Swedish and Spanish. By combining clear communication with vibrant storytelling, the project helped make the events feel welcoming, inclusive, and easy to engage with for a broader audience.
+           </p>
+         
+            <a href="project5.html" class="btn-bts" aria-label="Behind the scenes: Åsa Botanical Packaging">
+              Behind the Scenes <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 6: Text Left, Image Right -->
+      <article class="project project--alt-bg" id="project-6" data-breadcrumb="SNVE" aria-label="Project: SNVE">
+        <div class="project-intro">
+          <span class="project-number">06</span>
+          <h2 class="project-title">Smålands Nations Vokalensemble</h2>
+          <p class="project-description">
+Where illustration, atmosphere, and typography perform in harmony </p>
+        </div>
+        <div class="project-split project-split--text-left">
+          <div class="project-media">
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="snveflyer.png"/>
+          </div>
+
+          <div class="project-media">
+            <!-- Placeholder SVG image representing a branding project -->
+            <img src="snvefly.png"/>
+          </div>
+          </div>
+          <div class="project-text">
+            <h3 class="project-text-heading">GRAPHIC DESIGN</h3>
+            <p class="project-text-body">
+           Poster series for Smålands Nations Vokalensemble translated each concert theme into a distinct visual identity through illustration, typography, composition, and atmosphere. Every design was built to reflect the emotional tone of the performance while still communicating information.
+            </p>
+            <p class="project-text-body">
+              The posters balanced expressive aesthetics with functional communication design, creating visuals that felt both memorable and aligned with the atmosphere of the choir’s performances. From printed posters to folded program flyers, the visual system strengthened the audience experience before the concert had even begun.
+            </p>
+        
+            <a href="project6.html" class="btn-bts" aria-label="Behind the scenes: Björk Foundation Website">
+              Behind the Scenes <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          
+        </div>
+      </article>
+
+    </section><!-- /projects-wrapper -->
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="process-section" id="process" data-breadcrumb="Process" aria-label="Design process">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">How I Work</span>
+          <h2 class="section-title">Process</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step" aria-label="Process step 1: Discovery">
+            <span class="process-num">01</span>
+            <h3 class="process-step-title">Discovery</h3>
+            <p class="process-step-body">Every project begins with genuine curiosity. I listen — to stakeholders, to users, to the market. No assumptions, no templates. Understanding the specific problem before reaching for solutions.</p>
+          </div>
+          <div class="process-step" aria-label="Process step 2: Strategy">
+            <span class="process-num">02</span>
+            <h3 class="process-step-title">Strategy</h3>
+            <p class="process-step-body">Design without strategy is decoration. I map information architecture, define success metrics, and frame the creative brief before a single pixel is placed. This is where clarity is earned.</p>
+          </div>
+          <div class="process-step" aria-label="Process step 3: Design">
+            <span class="process-num">03</span>
+            <h3 class="process-step-title">Design</h3>
+            <p class="process-step-body">From rough sketches to refined systems. Iteration is not indecision — it is how great work is made. I design with intention, test with rigor, and refine until everything feels inevitable.</p>
+          </div>
+          <div class="process-step" aria-label="Process step 4: Delivery">
+            <span class="process-num">04</span>
+            <h3 class="process-step-title">Delivery</h3>
+            <p class="process-step-body">Handoff is not the end of a relationship — it is the beginning of a new phase. I deliver thorough documentation, design systems, and guidelines that empower teams to carry the work forward.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about-section" id="about" data-breadcrumb="About Me" aria-label="About the designer">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-label">The Designer</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="about-body">
+              I'm a Stockholm-based UX/UI and graphic designer with knowledge across brand identity, product, and digital design. I work with clients who believe design is a way of thinking, not just a way of making things look good.
+            </p>
+            <p class="about-body">
+              My practice is rooted in optimizing: function-led, material-honest, and built to users - with users. 
+            </p>
+            <p class="about-body">
+              Currently available for selected projects.
+            </p>
+            <div class="about-contact">
+              <a href="mailto:hello@studio.se" class="contact-link" aria-label="Send email to hello@studio.se">daniela.castro8@outlook.com</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">2026 Daniela Castro Silva</p>
+      <p class="footer-tagline">Design with intention.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
